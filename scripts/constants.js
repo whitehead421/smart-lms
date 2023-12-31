@@ -1,0 +1,167 @@
+const computerScienceEngineeringCourses = [
+  {
+    code: "CSE101",
+    name: "Introduction to Computer Science",
+    color: "#a903fc",
+    base: 10,
+  },
+  {
+    code: "CSE102",
+    name: "Data Structures and Algorithms",
+    color: "#3461eb",
+    base: 10,
+  },
+  {
+    code: "CSE103",
+    name: "Database Management Systems",
+    color: "#eb34d0",
+    base: 7,
+  },
+  { code: "CSE104", name: "Computer Networks", color: "#eb8634", base: 10 },
+  { code: "CSE105", name: "Software Engineering", color: "#68eb34", base: 10 },
+  { code: "CSE201", name: "Operating Systems", color: "#ff0000", base: 10 },
+  {
+    code: "CSE202",
+    name: "Artificial Intelligence",
+    color: "#ff8080",
+    base: 7,
+  },
+  { code: "CSE203", name: "Machine Learning", color: "#32a852", base: 10 },
+  { code: "CSE204", name: "Cybersecurity", color: "#c734eb", base: 10 },
+  { code: "CSE205", name: "Computer Graphics", color: "#6e8beb", base: 10 },
+  { code: "CSE301", name: "Web Development", color: "#eb34a3", base: 10 },
+  {
+    code: "CSE302",
+    name: "Mobile App Development",
+    color: "#eb7134",
+    base: 10,
+  },
+  { code: "CSE303", name: "Data Science", color: "#34eba1", base: 10 },
+  { code: "CSE304", name: "Cloud Computing", color: "#eb3434", base: 10 },
+  {
+    code: "CSE305",
+    name: "Human-Computer Interaction",
+    color: "#34eb73",
+    base: 7,
+  },
+  { code: "CSE401", name: "Big Data Analytics", color: "#ebaf34", base: 10 },
+  {
+    code: "CSE402",
+    name: "IoT (Internet of Things)",
+    color: "#344aeb",
+    base: 7,
+  },
+  { code: "CSE403", name: "Blockchain Technology", color: "#eb343e", base: 10 },
+  { code: "CSE404", name: "Computer Vision", color: "#34eba7", base: 10 },
+  { code: "CSE405", name: "Quantum Computing", color: "#eb34e0", base: 7 },
+];
+const studentNames = [
+  { name: "Furkan", surname: "Fire" },
+  { name: "Ada", surname: "Shelby" },
+  { name: "Mark", surname: "Johnson" },
+  { name: "Emily", surname: "Brown" },
+  { name: "David", surname: "Miller" },
+  { name: "Sophia", surname: "Taylor" },
+  { name: "Logan", surname: "Wilson" },
+  { name: "Ava", surname: "Moore" },
+  { name: "Jackson", surname: "Lee" },
+  { name: "Olivia", surname: "Smith" },
+  { name: "Lucas", surname: "Jones" },
+  { name: "Isabella", surname: "Anderson" },
+  { name: "Liam", surname: "Harris" },
+  { name: "Emma", surname: "Davis" },
+  { name: "Mason", surname: "Martin" },
+  { name: "Amelia", surname: "Clark" },
+  { name: "Ethan", surname: "Lewis" },
+  { name: "Harper", surname: "Young" },
+  { name: "Elijah", surname: "Turner" },
+  { name: "Abigail", surname: "White" },
+  { name: "Benjamin", surname: "Walker" },
+  { name: "Chloe", surname: "Johnson" },
+  { name: "Henry", surname: "Wright" },
+  { name: "Aria", surname: "Taylor" },
+  { name: "Daniel", surname: "Williams" },
+  { name: "Sofia", surname: "Thomas" },
+  { name: "Matthew", surname: "Moore" },
+  { name: "Ella", surname: "Allen" },
+  { name: "Jackson", surname: "Baker" },
+  { name: "Madison", surname: "Cooper" },
+  { name: "Liam", surname: "Fisher" },
+  { name: "Grace", surname: "Brown" },
+  { name: "Lucas", surname: "Carter" },
+  { name: "Mia", surname: "Hill" },
+  { name: "Oliver", surname: "Garcia" },
+  { name: "Emma", surname: "Stewart" },
+  { name: "William", surname: "Allen" },
+  { name: "Ava", surname: "Lewis" },
+  { name: "Liam", surname: "Jones" },
+  { name: "Sophia", surname: "Ward" },
+  { name: "Noah", surname: "Martin" },
+  { name: "Isabella", surname: "Cruz" },
+  { name: "Ethan", surname: "Perez" },
+  { name: "Chloe", surname: "Clark" },
+  { name: "James", surname: "Hill" },
+  { name: "Amelia", surname: "Baker" },
+  { name: "Benjamin", surname: "Garcia" },
+  { name: "Aria", surname: "Fisher" },
+  { name: "Daniel", surname: "White" },
+  { name: "Sofia", surname: "Wright" },
+  { name: "Matthew", surname: "Smith" },
+  { name: "Ella", surname: "Johnson" },
+  { name: "Jackson", surname: "Davis" },
+  { name: "Madison", surname: "Young" },
+  { name: "Liam", surname: "Walker" },
+  { name: "Grace", surname: "Thomas" },
+  { name: "Lucas", surname: "Anderson" },
+  { name: "Mia", surname: "Harris" },
+  { name: "Oliver", surname: "Wilson" },
+  { name: "Emma", surname: "Taylor" },
+  { name: "William", surname: "Lewis" },
+  { name: "Ava", surname: "Turner" },
+  { name: "Liam", surname: "Smith" },
+  { name: "Sophia", surname: "Martin" },
+  { name: "Noah", surname: "Moore" },
+  { name: "Isabella", surname: "Allen" },
+  { name: "Ethan", surname: "Carter" },
+  { name: "Chloe", surname: "Hill" },
+  { name: "James", surname: "Garcia" },
+  { name: "Amelia", surname: "Stewart" },
+  { name: "Benjamin", surname: "Allen" },
+  { name: "Aria", surname: "Lewis" },
+  { name: "Daniel", surname: "Jones" },
+  { name: "Sofia", surname: "Ward" },
+  { name: "Matthew", surname: "Martin" },
+  { name: "Ella", surname: "Cruz" },
+  { name: "Jackson", surname: "Perez" },
+  { name: "Madison", surname: "Clark" },
+  { name: "Liam", surname: "Hill" },
+  { name: "Grace", surname: "Baker" },
+  { name: "Lucas", surname: "Garcia" },
+  { name: "Mia", surname: "Fisher" },
+  { name: "Oliver", surname: "Clark" },
+  { name: "Emma", surname: "Hill" },
+  { name: "William", surname: "Ward" },
+  { name: "Ava", surname: "Young" },
+  { name: "Liam", surname: "Allen" },
+];
+
+const HOME_PAGE_HTML = `<div class="home-page"><header>
+    <h1>Welcome to SMART LMS! 🚀</h1>
+  </header>
+
+    <h2>Hello SMART LMS Family! 👋</h2>
+
+    <p>Are you ready to explore the power of education? SMART LMS is here to simplify your learning process and make it more effective. This platform is designed for both students and instructors, bringing you together to enhance the learning experience. 🌐</p>
+
+    <p><strong>Comprehensive Education Management:</strong> SMART LMS makes managing the education process easy. Create courses, track student progress, and share interactive content. The tools to better manage your class are here! 👩‍💻</p>
+
+    <p><strong>Student and Instructor-Friendly Interface:</strong> With our modern and user-friendly interface, using SMART LMS is a pleasure. It's designed for both students and instructors to navigate and use effortlessly. 📱</p>
+
+    <p><strong>Performance Analytics and Reporting:</strong> Use analytical data to improve your education and increase student success. SMART LMS provides performance analytics and reporting features to assist you in this regard. 📈</p>
+
+    <p><strong>Community and Support:</strong> Welcome to the SMART LMS family! Join our community to learn from each other and grow together. Have questions or need help? Our support team is here for you every step of the way. 🤝</p>
+
+    <p>Your SMART LMS journey begins now. Start exploring, and enjoy the pleasure of learning! 🎓</p>
+
+    <p><strong>The SMART LMS Team</strong></p>
+</div>`;

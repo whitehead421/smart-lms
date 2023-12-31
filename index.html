@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font initialized. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/elements.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/analytics.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+
+    <script src="scripts/constants.js" defer></script>
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/table_gen.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/settings.js" defer></script>
+    <script src="scripts/student-performance.js" defer></script>
+    <script src="scripts/course-overview.js" defer></script>
+    <script src="scripts/analytics.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/students.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/seeder.js" defer></script>
+    <title>Student System</title>
+  </head>
+  <body>
+    <!--
+      Sidebar with logo, title, search input and menu
+      to help navigate through the system.
+    -->
+    <aside>
+      <div class="sidebar-header">
+        <div class="logo-circles">
+          <div class="logo-circle light"></div>
+          <div class="logo-circle dark"></div>
+        </div>
+        <h1>SMART LMS</h1>
+        <i> Learning Management System </i>
+      </div>
+      <!-- 
+        Search input to search through the system.
+        Search results will be displayed in a list.
+      -->
+      <div class="aside-search">
+        <img src="assets/icons/search.svg" alt="Search" />
+        <input id="system-search-input" type="text" placeholder="Search" />
+        <div id="search-results">
+          <ul id="search-results-list"></ul>
+        </div>
+      </div>
+      <ul>
+        <li class="menu-item" onclick="changeMenu(1)">
+          <img src="assets/icons/dashboard.svg" alt="Home" />
+          <span>Home</span>
+        </li>
+        <li class="menu-item" onclick="changeMenu(2)">
+          <img src="assets/icons/student.svg" alt="Students" />
+          <span>Students</span>
+        </li>
+        <li class="menu-item" onclick="changeMenu(3)">
+          <img src="assets/icons/course.svg" alt="Courses" />
+          <span>Courses</span>
+        </li>
+        <li class="menu-item" onclick="changeMenu(4)">
+          <img src="assets/icons/analytic.svg" alt="Analytics" />
+          <span>Analytics</span>
+        </li>
+        <li class="menu-item" onclick="changeMenu(5)">
+          <img src="assets/icons/settings.svg" alt="Settings" />
+          <span>Settings</span>
+        </li>
+      </ul>
+    </aside>
+    <!-- Main section to be controlled with javascript. -->
+    <main>Welcome back!</main>
+    <!-- Modal to display anything that given by javascript. -->
+    <div id="modal-bg">
+      <div id="modal">
+        <div id="modal-header">
+          <h3 id="modal-title"></h3>
+          <img
+            src="assets/icons/close.svg"
+            onclick="closeModal()"
+            alt="Close"
+            id="modal-close"
+          />
+        </div>
+        <div id="modal-content"></div>
+      </div>
+    </div>
+  </body>
+</html>

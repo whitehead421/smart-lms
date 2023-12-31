@@ -1,0 +1,29 @@
+@media screen and (max-width: 850px) {
+  body {
+    flex-direction: column;
+  }
+
+  aside ul {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .menu-item span {
+    display: none;
+  }
+
+  .menu-item:hover {
+    border-right: none !important;
+    border-bottom: 3px solid #5c95f6;
+  }
+
+  .menu-active {
+    border-right: none !important;
+    border-bottom: 3px solid #5c95f6;
+  }
+
+  .home-page {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,114 @@
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  background: #d8d8d8;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+.btn-primary {
+  background: #5c95f6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #4e7bd8;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #5c95f6;
+  border: 1px solid #5c95f6;
+}
+
+.btn-secondary:hover {
+  background: #f4f4f4;
+}
+
+.btn-danger {
+  background: #f44336;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #e53935;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.1s ease;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::placeholder {
+  display: block;
+  color: black;
+  width: 100%;
+  font-size: 1rem;
+}
+
+select {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+select option {
+  padding: 0.5rem 1rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-container label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.radio-container {
+  display: flex;
+}
+
+body.dark input,
+body.dark select {
+  background: #333;
+  color: #fff;
+}
+
+body.dark input::placeholder,
+body.dark select::placeholder {
+  color: #ccc;
+}
+
+body.dark .checkbox-container label {
+  color: #fff;
+}
+
+body.dark .radio-container label {
+  color: #fff;
+}
+
+body.dark .radio-container input[type="radio"]:checked + label {
+  color: #fff;
+}

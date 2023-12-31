@@ -1,0 +1,180 @@
+.analytics-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.analytics-tab {
+  width: 100%;
+  padding: 10px 15px;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #0b1737;
+  background-color: transparent;
+  border: 1px solid #0b1737;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.analytics-tab-active {
+  color: #fff;
+  background-color: #0b1737;
+  border-color: #0b1737;
+}
+
+.analytics-tab .analytics-tab-active:hover {
+  color: #fff;
+  background-color: #0b1737;
+  border-color: #0b1737;
+}
+
+.analytics-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.student-performance-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.student-info-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: #0f2139;
+  margin-bottom: 0.2rem;
+}
+
+.student-info-card .student-id {
+  font-size: 0.8rem;
+}
+
+.overview-cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.overview-card {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.overview-card-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: rgba(92, 149, 246, 0.2);
+}
+
+.overview-card-image-container img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.overview-card-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.overview-card-text-container p {
+  font-size: 0.8rem;
+}
+
+.overview-card-text-container h3 {
+  font-size: 1.4rem;
+}
+
+.student-performance-course {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: #0f2139;
+  color: #fff;
+  margin: 0.2rem 0;
+}
+
+.student-performance-course-grades {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: #0f2139;
+}
+
+.student-performance-course-grade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-overview-header {
+  border: 1px solid #0b1737;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-overview-container {
+  margin-top: 1rem;
+}
+
+.course-statistics {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4rem 0;
+}
+
+.course-statistics-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+
+.course-statistics-item-label {
+  font-size: 0.8rem;
+}
+
+.course-statistics-item-value {
+  font-size: 1.4rem;
+}
+
+body.dark .analytics-tab {
+  color: #fff;
+  background-color: #0b1737;
+  border-color: #0b1737;
+}
+
+body.dark .analytics-tab .analytics-tab-active:hover {
+  color: #fff;
+  background-color: #0b1737;
+  border-color: #0b1737;
+}
+
+body.dark .student-info-card {
+  background-color: #222;
+}
+
+body.dark .overview-card-image-container {
+  background-color: rgba(92, 149, 246, 0.2);
+}
