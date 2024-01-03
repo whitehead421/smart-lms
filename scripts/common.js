@@ -149,7 +149,10 @@ function createDialog(message, desc = "", okHandler, cancelHandler) {
 
 // Function to create unique student id
 function createStudentId() {
-  const id = "100" + (Math.floor(Math.random() * 900) + 100);
+  const id =
+    "100" +
+    (Math.floor(Math.random() * 900) + 100) +
+    (Math.floor(Math.random() * 900) + 100);
 
   if (state.students.find((student) => student.id === id)) {
     return createStudentId();

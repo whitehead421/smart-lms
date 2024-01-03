@@ -150,6 +150,12 @@ function saveStudent() {
     return;
   }
 
+  // If name or surname contains numbers, do nothing
+  if (/\d/.test(name) || /\d/.test(surname)) {
+    alert("Name and surname can not contain numbers!");
+    return;
+  }
+
   const courses = [];
   for (let i = 0; i < state.courses.length; i++) {
     if (document.getElementById(state.courses[i].code).checked) {
@@ -171,6 +177,12 @@ function editStudent(studentId) {
 
   if (name === "" || surname === "") {
     alert("Name and surname can not be empty!");
+    return;
+  }
+
+  // If name or surname contains numbers, do nothing
+  if (/\d/.test(name) || /\d/.test(surname)) {
+    alert("Name and surname can not contain numbers!");
     return;
   }
 
